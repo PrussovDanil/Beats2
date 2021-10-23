@@ -1,0 +1,109 @@
+.hero__container{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 100%;
+}
+
+.hero__content {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  position: relative;
+
+  @include tablets{
+    width: 100%;
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+
+
+    &::before{
+      content:url(./../img/headphones700.png);
+      margin-bottom: 58px;
+    }
+  }
+}
+
+.hero__headphones {
+  width: 50%;
+  position: absolute;
+  right: 0;
+  top: -60px;
+
+  @include tablets{
+    display:none;
+  }
+}
+
+.hero__text-section{
+  width: 100%;
+  max-width: 400px;
+  margin-bottom: 100px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+
+  @include tablets{
+    align-items: center;
+    max-width: 663px; 
+  }
+}
+
+.hero__title{
+  font-family: Play;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 48px;
+  line-height: 52px;
+  margin-bottom: 14px;
+  
+  @include phones{
+    font-size: 37px;
+  }
+
+}
+
+.hero__subtitle{
+  font-size: 21px;
+  line-height: 25px;
+  margin-bottom: 35px;
+  @include tablets{
+   
+  }
+}
+
+.hero__possibilities{
+  @include tablets{
+    display: none;
+  }
+}
+
+.hero__item-img{
+  width: 41px;
+  height: 41px;
+  
+  img {
+    width: 100%;
+    height: 100%;
+  }
+}
+
+.hero__list {
+  display: flex;
+}
+
+.hero__item{
+  width: 100%;
+  max-width: 166px;
+  display: flex;
+  font-family: Play;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 18px;
+  align-items: center;
+}

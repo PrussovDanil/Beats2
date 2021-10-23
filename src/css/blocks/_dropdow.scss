@@ -1,0 +1,30 @@
+.dropdown__elim{
+  display: flex;
+  justify-content: space-between;
+  width: 237px;
+  font-family: Play;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 24px;
+  margin-bottom: 12px;
+
+  &:last-child{
+    margin-bottom: 0px;
+  }
+}
+
+
+.dropdown__item{
+  display: flex;
+  &--img{
+    margin-right: 4px;
+  }
+
+}
+
+
+.dropdown__item-img{
+  width: 13px;
+  margin-right: 18px;
+}

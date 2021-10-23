@@ -1,0 +1,26 @@
+.interaktive-avatar{
+  width: 74px;
+  height: 74px;
+  margin-right: 7px;
+
+  @include tablets{
+    width: 74px;
+  height: 74px;
+  }
+
+
+  &:last-child{
+    margin-right: 0;
+  }
+  
+}
+
+.interaktive-avatar__img{
+  width: 100%;
+  height: 100%;
+  
+  border-radius: 50%;
+  // &:hover{
+  //   border: 4px solid #E01F3D;
+  // }
+}

@@ -1,0 +1,15 @@
+.modal{
+  display: none;
+}
+
+.modal__container{
+  display: flex;
+  flex-direction: column;
+  padding: 100px;
+  justify-content: center;
+  align-items: center;
+}
+
+.modal__content{
+  margin-bottom: 20px;
+}

@@ -1,0 +1,90 @@
+.offers{
+  display: flex;
+  justify-content: space-between;
+
+  @include phones{
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
+
+.offers__top{
+  background: #F2F5F4;
+  width: 100%;
+  max-width: 128px;
+  border-radius:100%;
+  padding: 30px;
+  
+  margin-bottom: 22px;
+}
+
+.offers__item{
+  display: flex;
+  flex: 1;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  max-width: 276px;
+  position: relative;
+  padding: 0 1%;
+
+ 
+
+  &::after{
+    content: url('../../icon/Combined\ shape\ 2204.png');
+    display: block;
+    position: absolute;
+    width: 70px;
+    top: 30px;
+    right: 0;
+    transform: translateX(50%);
+  } 
+  
+  @include tablets{
+    &::after{
+      display: none;
+    }
+  }
+
+   
+  @include phones{
+    flex-direction: row;
+    max-width: 480px;
+  }
+
+  &:last-child{
+    &::after{
+      display: none;
+    }
+  }
+}
+
+.offers__content{
+  text-align: center;
+}
+
+.offers__title{
+  font-family: Play;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 24px;
+  line-height: 28px;
+  margin-bottom: 7px;
+}
+
+
+.offers__text{
+  font-family: Play;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 19px;
+  color: #666666;
+}
+
+.offers__top-icon{
+  width: 68px;
+  height: 65px;
+}
+

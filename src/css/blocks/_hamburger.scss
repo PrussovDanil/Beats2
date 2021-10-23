@@ -1,0 +1,41 @@
+.hamburger{
+  width: 24px;
+  height: 20px;
+  display: inline-block;
+  flex-direction: column;
+  justify-content: space-between;
+  display: none;
+
+  @include tablets{
+    display: inline-flex;
+  }
+
+  &.active{
+    display:flex ;
+    background: #313131;
+    justify-content: center;
+    align-items: center;
+    padding: 20% 36%;
+    font-family: Play;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 36px;
+    line-height: 72px;
+    color: #FFFFFF;
+    
+    
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+  }
+}
+
+.hamburger__plank{
+  display: block;
+  margin-bottom: 2px;
+  background: #292929;
+  height:4px;
+  border-radius: 10px;
+}

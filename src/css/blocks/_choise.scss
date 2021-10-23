@@ -1,0 +1,202 @@
+.choice{
+ 
+  display: flex;
+  align-items: center;
+  @include tablets{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    
+
+    // &::before{
+    //   content: url(./../../img/head__small.png);
+
+    // }
+  }
+  
+}
+
+
+
+.choice__main{
+  display: flex;
+  justify-content: space-between;
+  @include tablets{
+    flex-direction: column;
+    align-items: center;
+  }
+  
+}
+
+.choise__img{
+  width: 100%;
+  max-width: 400px;
+  @include tablets{
+    max-width: 300px;
+  
+  }
+}
+
+.choise__img-item{
+  width: 100%;
+}
+
+
+.choice__arrow{
+  width: 14px;
+  z-index: 2;
+
+  @include tablets{
+    position: absolute;
+    top: 24%;
+  }
+
+  &--left {
+    left: 20%;
+  }
+  
+  &--right {
+    right: 20%;
+  }
+
+  @include phones{
+    position: absolute;
+    top: 24%;
+  
+
+  &--left {
+    left: 0;
+  }
+  
+  &--right {
+    right: 0;
+  }
+}
+}
+
+.swiper{
+  width: 100%;
+}
+
+
+
+
+
+.choice__dropdown {
+  background-color: #9A9A9A;
+  padding: 24px;
+  width: 91px;
+  border-radius: 4px;
+  margin-bottom: 24px;
+}
+
+.choice__text{
+  font-family: Play;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 36px;
+  line-height: 42px;
+  margin-bottom: 24px;
+  @include tablets{
+    text-align: center;
+  }
+}
+
+
+.choice__subtitle-text{
+  font-family: Play;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 19px;
+  color: #666666;  
+  margin-bottom: 27px;
+  @include tablets{
+    text-align: center;
+  }
+
+}
+
+.choice__feature{
+  display: flex;
+  margin-bottom: 24px;
+  &:last-child{
+    margin-bottom: 0px;
+  }
+  
+  @include tablets{
+    align-items: center;
+    justify-content: center;
+  }
+}
+
+.choice__feature--text{
+  margin-right: 86px;
+  &:last-child{
+    margin-right: 0px;
+  }
+}
+
+.choice__name{
+  color: #666666;
+  font-size: 16px;
+  line-height: 19px;
+}
+
+.choice__desc{
+  font-style: normal;
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 21px;
+}
+
+.choice__feature-price{
+  font-family: Play;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 36px;
+  line-height: 60px;
+  margin-right: 13px;
+}
+
+.choice__dropdowns {
+  position: relative;
+}
+
+.choice__dropdown{
+  display: flex;
+
+  &:hover {
+    + .choice__dropdown-item {
+      visibility: visible;
+      opacity: 1;
+    }
+  }
+
+  @include tablets{
+    display: none;
+  }
+}
+
+.choice__dropdown-item{
+  display: flex;
+  flex-direction: column;
+  text-align: left;
+  position: absolute;
+  left: 91px;
+  padding: 28px 34px 30px 25px;
+  background: #EDEDED;
+  color: #1E1F20;
+  top: 0px;
+  visibility: hidden; 
+  opacity: 0;
+  transition: opacity 0.4s ease;
+  border-radius: 5px;
+  font-size: 13px;
+  line-height: 21px;
+  &:hover {
+
+      visibility: visible;
+      opacity: 1;
+  }
+}

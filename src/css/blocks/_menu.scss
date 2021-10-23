@@ -1,0 +1,35 @@
+.menu__mob{
+  display: none;
+
+}
+
+.menu__mob--list{
+  text-align: center;
+}
+
+.menu__mob--close{
+  position: absolute;
+  top: 15px;
+  right: 15px;
+}
+
+
+.active{
+  display:flex ;
+  background: #313131;
+  justify-content: center;
+  align-items: center;
+  padding: 20% 36%;
+  font-family: Play;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 36px;
+  line-height: 72px;
+  color: #FFFFFF;
+  
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+}

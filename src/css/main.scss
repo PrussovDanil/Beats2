@@ -1,0 +1,39 @@
+$containerWidth:940px;
+$baseFontSize:18px;
+
+$z-fixed-menu:100;
+
+$red:#E01F3D;
+$gray:#666666;
+$black:#292929;
+//breakpionts
+
+$tablets: 768px;
+$phones: 480px;
+
+
+//setup
+@import './layout/_media.scss';
+
+
+@import './layout/_base.scss';
+@import './blocks/_header.scss';
+@import './blocks/_hero.scss';
+@import './blocks/_offers';
+@import './blocks/_section';
+@import './blocks/_btn';
+@import './blocks/_reviews';
+@import './blocks/_interaktive-avatar';
+@import './blocks/_form.scss';
+@import './blocks/_radio.scss';
+@import './blocks/_fixed.scss';
+@import './blocks/_hamburger.scss';
+@import './blocks/_choise.scss';
+@import './blocks/_active.scss';
+@import './blocks/_dropdow.scss';
+@import './blocks/_menu.scss';
+@import './blocks/_team.scss';
+@import './blocks/_modal.scss';
+@import './blocks/_products.scss';
+@import './blocks/_player.scss';
+@import './blocks/footer';
